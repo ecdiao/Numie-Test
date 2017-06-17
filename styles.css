@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Mobile View*/
+
+html, html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background-color: black;
+	color: white;
+	padding-left: auto;
+	padding-right: auto;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+footer {
+	padding: 20px 30px;
+}
+h2 {
+	background-color: #2F5187;
+	font-weight: 100px;
+	padding-bottom: 10px;
+}
+p {
+	background-color: #2F5187;
+	padding-bottom: 30px;
+}
+a.button {
+	border: 3px white solid;
+	padding: 10px 25px;
+	border-radius: 30px;
+	text-decoration: none;
+	background-color: #2F5187;
+}
+
+a.button:hover {
+	color: black;
+	border-color: black;
+}
+
+.logo-crop {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+	height: 230px;
+	overflow: hidden;
+}
+.style-logo {
+	width: 100%;
+}
+.style-nav {
+	background-color: red;
+}
+.style-nav-ul {
+	flex-flow: column wrap;
+	padding: 0;
+}
+.style-nav-ul a {
+	text-align: center;
+	padding: 10px;
+	border-top: 1px solid rgba(0,0,0,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.style-nav-ul a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	background-color: red;
+	color: white;
+	text-transform: uppercase;
+}
+.style-nav-ul a:hover {
+	color: black;
+}
+.hero-crop {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	height: 10%;
+	max-width: 800px;
+	overflow: hidden;
+}
+.style-hero {
+	width: 100%;
+}
+.info-box {
+	background-color: #2F5187;
+	color: white;
+	padding: 30px 20px 60px;
+	text-align: center;
+	outline: solid;
+	outline-color: white;
+	outline-offset: -15px;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.footer-text {
+	font-size: 13px;
+	margin-bottom: px;
+	background-color: black;
+	text-align: center;
+}
+.col {
+	width: 100%;
+}
+
+/*Tablet View*/
+
+@media all and (min-width: 600px) {
+.style-nav-ul {
+	list-style: none;
+	margin: auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	max-width: 800px;
+	background-color: red;
+}
+.style-nav-ul a {
+	border-top: none;
+	border-bottom: none;
+}
+.col-md-one-half {
+	width: 50%;
+}
+.col {
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+}
+
+/*Desktop View*/
+
+
+@media all and (min-width: 1000px) {
+.style-nav-ul {
+	list-style: none;
+	margin: auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	max-width: 800px;
+	background-color: red;
+}
+.style-nav-ul a {
+	border-top: none;
+	border-bottom: none;
+}
+.col-md-one-half {
+	width: 50%;
+}
+.col-lg-one-quarter {
+	width: 25%;
+}
+.col {
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+}
+
